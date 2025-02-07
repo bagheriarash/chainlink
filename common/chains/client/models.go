@@ -2,7 +2,6 @@ package client
 
 type SendTxReturnCode int
 
-// SendTxReturnCode is a generalized client error that dictates what should be the next action, depending on the RPC error response.
 const (
 	Successful              SendTxReturnCode = iota + 1
 	Fatal                                    // Unrecoverable error. Most likely the attempt should be thrown away.
